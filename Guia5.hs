@@ -95,3 +95,8 @@ multiplosDeN n (x : xs) | x `mod` n == 0 = x : multiplosDeN n xs
 ordenar :: [Integer] -> [Integer]
 ordenar [] = []
 ordenar l = ordenar (quitar (maximo l) l) ++ [maximo l] 
+
+--4
+aplanar :: [[Char]] -> [Char]
+aplanar [] = []
+aplanar (x:xs) = x ++ aplanar xs
