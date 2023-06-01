@@ -68,4 +68,3 @@ def elevarMatrizCuadrada(d:int, p:int):
     for _ in range(p-1):
        res = m @ res
     return res
-elevarMatrizCuadrada(2,1)
